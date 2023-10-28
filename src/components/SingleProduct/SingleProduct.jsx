@@ -29,7 +29,6 @@ const SingleProduct = () => {
   };
 
   if (!data) return;
-  debugger
   const product = data.data[0].attributes;
 
   return (
@@ -57,6 +56,7 @@ const SingleProduct = () => {
               </div>
               <button className="add-to-cart-button" onClick={()=>{
                 handleAddToCart(data.data[0],quantity)
+                setQuantity(1)
               }}>
                 <FaCartPlus size={20} />
                 ADD TO CART
