@@ -49,6 +49,7 @@ const CartItem = () => {
                         <div className="text">
                             <span>{item.attributes.quantity}</span>
                             <span>x</span>
+                            <span>{item.attributes.price} = </span>
                             <span className="highlight">
                                 <span>&#8377;</span>
                                 {item.attributes.price *
