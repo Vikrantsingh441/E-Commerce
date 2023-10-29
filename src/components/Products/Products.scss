@@ -29,6 +29,7 @@
     .products{
         display: flex;
         flex-flow: wrap;
+        cursor: pointer;
         gap: 10px;
         @include md {
             gap: 20px
